@@ -1,13 +1,56 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100dvh;
-    overflow: hidden;
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  overflow: hidden;
+  background-image: url(image/the\ bear.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+main {
+  max-width: 700px;
+  height: 500px;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+main .img {
+  width: 350px;
+  background-color: aqua;
+  height: 100%;
+}
+
+main .img img {
+  object-fit: cover;
+}
+
+main .log-in {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
