@@ -10,10 +10,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 100dvh;
+  width: 100%;
   overflow: hidden;
-  background-image: url(image/the\ bear.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: #53300d url(image/the-bear.jpg) no-repeat;
+  background-position: center;
+  background-size: fixed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -28,29 +30,128 @@ li {
 main {
   max-width: 700px;
   height: 500px;
-  background-color: brown;
+  background-color: rgb(60, 36, 7);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   border-radius: 1rem;
 }
 
 main .img {
-  width: 350px;
+  min-width: 350px;
   background-color: aqua;
   height: 100%;
 }
 
 main .img img {
-  object-fit: cover;
+  width: 100%;
 }
 
 main .log-in {
-  width: 350px;
+  min-width: 350px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  /* background-color: rgb(11, 24, 24); */
+}
+
+.log-in h4 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.log-in input {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  height: 20px;
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  color: black;
+}
+
+.log-in > button {
+  width: 200px;
+  height: 25px;
+  margin: 10px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.log-in a {
+  color: white;
+  text-decoration: underline;
+}
+
+.log-in a:hover {
+  color: rgb(108, 171, 255);
+  text-decoration: none;
+}
+
+.log-up {
+  min-width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* background-color: red; */
+}
+
+.log-up h4 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.log-up input {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  height: 20px;
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  color: black;
+}
+
+.log-up > button {
+  width: 200px;
+  height: 25px;
+  margin: 10px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.log-up a {
+  color: white;
+  text-decoration: underline;
+}
+
+.log-up a:hover {
+  color: rgb(108, 171, 255);
+  text-decoration: none;
+}
+
+.log-in .btn {
+  border: none;
+  background: transparent;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.log-in .btn:hover {
+  color: rgb(108, 171, 255);
+  text-decoration: none;
 }
