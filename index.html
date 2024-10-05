@@ -26,9 +26,9 @@
             </div>
             <button>Log in</button>
             <a href="#">Forget your password!</a>
-            <p href="#">Dont have account?<button onclick="change()" class="btn" id="log-up-click">Click Me</button></p>
+            <p href="#">Dont have account?<button class="btn" id="log-up-click">Click Me</button></p>
         </div>
-        <div class="log-up">
+        <div class="log-up" id="log-up">
             <h4>Wellcome</h4>
             <div class="input">
                 <label for="email">enter your email :</label>
@@ -47,6 +47,16 @@
             <p href="#">I have account?<a href="#" id="log-up-click">Click Me</a></p>
         </div>
     </main>
+
+    <script>
+        window.onload = function () {
+            let logIn = document.getElementById("log-up-click");
+            let logInChenge = document.getElementById("log-in");
+            logIn.addEventListener("click", function () {
+                logInChenge.classList.toggle("chang-to-logup");
+            })
+        }
+    </script>
 </body>
 
 </html>

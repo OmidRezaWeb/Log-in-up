@@ -56,7 +56,10 @@ main .log-in {
   justify-content: center;
   align-items: center;
   color: white;
-  /* background-color: rgb(11, 24, 24); */
+}
+
+main .chang-to-logup{
+ display: none;
 }
 
 .log-in h4 {
@@ -103,7 +106,6 @@ main .log-in {
   justify-content: center;
   align-items: center;
   color: white;
-  /* background-color: red; */
 }
 
 .log-up h4 {
