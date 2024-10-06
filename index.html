@@ -44,7 +44,7 @@
                 <input type="password" name="password" id="password">
             </div>
             <button>Log up</button>
-            <p href="#">I have account?<a href="#" id="log-up-click">Click Me</a></p>
+            <p href="#">I have account?<a href="#" id="log-in-click">Click Me</a></p>
         </div>
     </main>
 
@@ -52,8 +52,12 @@
         window.onload = function () {
             let logIn = document.getElementById("log-up-click");
             let logInChenge = document.getElementById("log-in");
+            let logUp = document.getElementById("log-in-click");
             logIn.addEventListener("click", function () {
-                logInChenge.classList.toggle("chang-to-logup");
+                logInChenge.classList.add("chang-to-logup");
+            })
+            logUp.addEventListener("click", function () {
+                logInChenge.classList.remove("chang-to-logup");
             })
         }
     </script>
