@@ -12,9 +12,9 @@ body {
   height: 100dvh;
   width: 100%;
   overflow: hidden;
-  background: #53300d url(image/the-bear.jpg) no-repeat;
+  background:  url(image/the-bear2.jpg) no-repeat;
   background-position: center;
-  background-size: fixed;
+  background-size: cover;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,7 +30,8 @@ li {
 main {
   max-width: 700px;
   height: 500px;
-  background-color: rgb(60, 36, 7);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -40,7 +41,6 @@ main {
 
 main .img {
   min-width: 350px;
-  background-color: aqua;
   height: 100%;
 }
 
@@ -94,7 +94,7 @@ main .chang-to-logup{
 }
 
 .log-in a:hover {
-  color: rgb(108, 171, 255);
+  color: black;
   text-decoration: none;
 }
 
@@ -140,7 +140,7 @@ main .chang-to-logup{
 }
 
 .log-up a:hover {
-  color: rgb(108, 171, 255);
+  color: black;
   text-decoration: none;
 }
 
@@ -154,6 +154,6 @@ main .chang-to-logup{
 }
 
 .log-in .btn:hover {
-  color: rgb(108, 171, 255);
+  color: black;
   text-decoration: none;
 }
